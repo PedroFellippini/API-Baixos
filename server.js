@@ -269,4 +269,6 @@ app.listen(porta, (request, response) => {
     console.log(`Servidor rodando: http://127.0.0.1:${porta}`);
 });
 
-app.use(cors());
+app.use(cors({
+    origin:"http://localhost:5173/"
+}));
