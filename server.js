@@ -2,7 +2,13 @@ import express, { request, response } from "express";
 import cors from "cors";
 
 const app = express();
+
 const porta = 8000;
+
+app.use(cors({
+    origin:"http://localhost:5173"
+}));
+
 const baixos = [
     {
         id: 1,
@@ -269,6 +275,3 @@ app.listen(porta, (request, response) => {
     console.log(`Servidor rodando: http://127.0.0.1:${porta}`);
 });
 
-app.use(cors({
-    origin:"http://localhost:5173/"
-}));
