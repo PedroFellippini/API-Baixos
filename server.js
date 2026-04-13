@@ -161,8 +161,48 @@ app.get("/", (request, response) => {
 });
 
 //buscar API
-app.get("/baixos", (reques, response) => {
-    response.status(200).json(baixos);
+app.get("/baixos", (req, res) => {
+    let resultado = baixos;
+
+    const { marca, modelo, linha, numCordas, paisFab, ano } = req.query;
+
+    if (marca) {
+        resultado = resultado.filter(b =>
+            b.marca.toLowerCase().includes(marca.toLowerCase())
+        );
+    }
+
+    if (modelo) {
+        resultado = resultado.filter(b =>
+            b.modelo.toLowerCase().includes(modelo.toLowerCase())
+        );
+    }
+
+    if (linha) {
+        resultado = resultado.filter(b =>
+            b.linha.toLowerCase().includes(linha.toLowerCase())
+        );
+    }
+
+    if (numCordas) {
+        resultado = resultado.filter(b =>
+            b.numCordas == parseInt(numCordas)
+        );
+    }
+
+    if (paisFab) {
+        resultado = resultado.filter(b =>
+            b.paisFab.toLowerCase().includes(paisFab.toLowerCase())
+        );
+    }
+
+    if (ano) {
+        resultado = resultado.filter(b =>
+            b.ano == parseInt(ano)
+        );
+    }
+
+    res.json(resultado);
 });
 
 //buscar id
