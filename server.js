@@ -5,7 +5,7 @@ const app = express();
 const porta = process.env.PORT || 8000;
 
 app.use(cors({
-    origin:"http://localhost:5173"
+    origin:"https://avaliacaopam-1.onrender.com"
 }));
 
 const baixos = [
