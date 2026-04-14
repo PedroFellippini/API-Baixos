@@ -2,7 +2,6 @@ import express, { request, response } from "express";
 import cors from "cors";
 
 const app = express();
-
 const porta = process.env.PORT || 8000;
 
 app.use(cors({
@@ -311,7 +310,7 @@ app.get("/baixos/ano/:ano", (request, response) => {
     response.status(200).json(baixo);
 });
 
-app.listen(porta, (request, response) => {
-    console.log(`Servidor rodando: http://127.0.0.1:${porta}`);
+app.listen(porta, "0.0.0.0", () => {
+  console.log(`Servidor rodando na porta ${porta}`);
 });
 
