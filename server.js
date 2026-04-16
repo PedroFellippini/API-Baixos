@@ -22,7 +22,7 @@ const baixos = [
         id: 2,
         marca: "Ernie Ball",
         modelo: "Music Man StingRay",
-        linha: "50th",
+        linha: "50th Anniversary",
         numCordas: 4,
         paisFab: "EUA",
         ano: 2026
@@ -152,7 +152,16 @@ const baixos = [
         numCordas: 4,
         paisFab: "EUA",
         ano: 2024
-    },  
+    },
+    {
+        id: 17,
+        marca: "Tagima",
+        modelo: "Modern",
+        linha: "Millenium Top 6",
+        numCordas: 6,
+        paisFab: "China",
+        ano: 2018
+    },
 ];
 //tela "principal"
 app.get("/", (request, response) => {
