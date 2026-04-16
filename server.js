@@ -162,6 +162,42 @@ const baixos = [
         paisFab: "China",
         ano: 2018
     },
+    {
+        id: 18,
+        marca: "Ken Smith",
+        modelo: "Modern",
+        linha: "BT6 Elite",
+        numCordas: 6,
+        paisFab: "EUA",
+        ano: 2009
+    },
+    {
+        id: 19,
+        marca: "Condor",
+        modelo: "Jazz Bass",
+        linha: "Xb224 Mwr",
+        numCordas: 4,
+        paisFab: "Indonesia",
+        ano: 2016
+    },
+    {
+        id: 20,
+        marca: "Fodera",
+        modelo: "Modern",
+        linha: "Emperor 4 40th Anniversary",
+        numCordas: 4,
+        paisFab: "EUA",
+        ano: 2023
+    },
+    {
+        id: 21,
+        marca: "Fender",
+        modelo: "Jaguar Bass",
+        linha: "Squier Affinity Jaguar Bass H",
+        numCordas: 4,
+        paisFab: "Indonesia",
+        ano: 2020
+    },
 ];
 //tela "principal"
 app.get("/", (request, response) => {
