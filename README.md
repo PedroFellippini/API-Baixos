@@ -1,2 +1,2 @@
 # API-Baixos
-API a qual apresenta diferentes modelos de contrabaixos.
+API a qual apresenta alguns diferentes modelos de contrabaixos.
