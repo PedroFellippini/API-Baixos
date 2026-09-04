@@ -198,6 +198,16 @@ const baixos = [
         paisFab: "Indonesia",
         ano: 2020
     },
+    {
+        id: 22,
+        marca: "Tagima",
+        modelo: "Jazz Bass",
+        linha: "TW-73 Plus",
+        numCordas: 5,
+        paisFab: "China",
+        ano: 2026
+    },
+    
 ];
 //tela "principal"
 app.get("/", (request, response) => {
